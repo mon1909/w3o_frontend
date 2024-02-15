@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #232f3e;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+      }
+
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .product {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 98.5%;
+      }
+      nav {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+      }
+
+      .nav-left a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+      }
+
+      .nav-right input {
+        margin-left: auto;
+        padding: 5px;
+      }
+
+      img{
+        overflow: hidden;
+        height: 35%;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>E-commerce Website</h1>
+      <h3>Welcome to the website. What are you looking for?</h3>
+    </header>
+
+    <nav>
+      <div class="nav-left">
+        <a href="#">Sell</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">New Releases</a>
+        <a href="#">Customer Service</a>
+      </div>
+      <div class="nav-right">
+        <input type="search" placeholder="Search here." />
+      </div>
+    </nav>
+
+    <div class="product-container">
+      <div class="product">
+        <img src="product1.jpeg" alt="Product 1" />
+        <h2>Product 1</h2>
+        <p>
+          Description of Product 1. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.
+        </p>
+        <p>Rs. 1,50,000/-</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2" />
+        <h2>Product 2</h2>
+        <p>
+          Description of Product 2. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.
+        </p>
+        <p>Rs. 2,00,000/-</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="product3.jpeg" alt="Product 3"  />
+        <h2>Product 3</h2>
+        <p>
+          Description of Product 3. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.
+        </p>
+        <p>Rs. 1,65,000/-</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
