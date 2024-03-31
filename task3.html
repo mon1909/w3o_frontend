@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #666;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        canvas {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #000;
+        }
+        
+        video, audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Media Website</h1>
+    </header>
+    <nav>
+        <a href="#svg">SVG</a>
+        <a href="#canvas">Canvas</a>
+        <a href="#media">Media</a>
+    </nav>
+    <main>
+        <section id="svg">
+            <h2>SVG</h2>
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="50" fill="red"/>
+            </svg>
+        </section>
+        
+        <section id="canvas">
+            <h2>Canvas</h2>
+            <canvas id="myCanvas" width="200" height="200"></canvas>
+            <script>
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'blue';
+                ctx.fillRect(50, 50, 100, 100);
+                
+                ctx.strokeStyle = 'green';
+                ctx.lineWidth = 5;
+                ctx.strokeRect(75, 75, 50, 50);
+                
+                ctx.beginPath();
+                ctx.arc(150, 150, 25, 0, 2*Math.PI);
+                ctx.fillStyle = 'orange';
+                ctx.fill();
+            </script>
+        </section>
+        
+        <section id="media">
+            <h2>Media</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+    </main>
+</body>
+</html>

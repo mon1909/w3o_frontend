@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>1. Adding Style Tags </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus at ea quis, explicabo corporis earum, delectus praesentium omnis perferendis voluptate cupiditate enim aperiam ipsum officiis non corrupti? Doloremque, in.</p>
+        <div class="block">
+            <h3>This is a Block Element</h3>
+            <p>This paragraph has block display.</p>
+        </div>
+        <span class="inline">This is an Inline Element</span>
+        <span class="inline">This is another Inline Element</span>
+        <hr>
+        <h2>2. Text Formatting Elements </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt blanditiis dolores saepe distinctio aspernatur magni numquam, accusamus, a quis tempore? Quaerat sapiente delectus, repudiandae eligendi nostrum quasi possimus quae?</p>
+        <p>This is <strong>important</strong> text.</p>
+        <p>This is <em>emphasized</em> text.</p>
+        <blockquote>This is a blockquote.</blockquote>
+        <hr>
+        <h2>3. Exploring Color Styles</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi beatae corrupti, optio blanditiis atque laborum laboriosam sequi mollitia adipisci accusantium placeat praesentium voluptatum eos, hic cum eligendi, nihil quia!</p>
+        <p style="color: red;">This text is red.</p>
+        <div style="background-color: yellow;">
+            <p>This has a yellow background.</p>
+        </div>
+        <div style="border: 2px solid blue;">
+            <p>This has a blue border.</p>
+        </div>
+        <hr>
+        <h2>4. Block vs Inline Elements</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam voluptates, veniam fuga repellendus quos non id tempore veritatis hic atque vel incidunt voluptatibus. Porro aliquid temporibus obcaecati eius ducimus.</p>
+        <div class="block">Block Element 1</div>
+        <div class="block">Block Element 2</div>
+        <span class="inline">Inline Element 1</span>
+        <span class="inline">Inline Element 2</span>
+        <hr>
+        <h2>5. HTML Input Fields and Forms</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid exercitationem fugiat eos blanditiis laudantium ipsam. Commodi obcaecati esse voluptate possimus tempore molestiae, optio culpa quisquam odit dolores quibusdam ex?</p>
+        <p>Implement labels for each input field using &lt;label&gt; for accessibility.</p>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <input type="radio" id="option1" name="option" value="option1">
+                <label for="option1">Option 1</label><br>
+                <input type="radio" id="option2" name="option" value="option2">
+                <label for="option2">Option 2</label><br>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>&copy;My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
